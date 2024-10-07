@@ -64,26 +64,10 @@ export const SIDENAV_ITEMS: SideNavItem[] = [
    {
     title: 'Logout',
     // Set path as null or remove it since we will handle the logout separately
-    path: "/",
+    path: "/users/logout",
     icon: <Icon icon="lucide:log-out" width="24" height="24" />,
     isBottom: true,
-    // onClick: async () => {
-    //   // Your logout logic here
-    //   const response = await fetch('/api/users/logout', {
-    //     method: 'GET',
-    //   });
-
-    //   if (response.ok) {
-    //     // Clear the token from cookies
-    //     document.cookie = 'token=; Max-Age=0; path=/';
-    //     alert('Logged out successfully');
-    //     // Redirect to login
-    //     window.location.href = '/users/login'; // Use window.location.href to navigate
-    //   } else {
-    //     const errorData = await response.json();
-    //     alert(`Error: ${errorData.message}`);
-    //   }
-    // },
+    
   },
 ];
 

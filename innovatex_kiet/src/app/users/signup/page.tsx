@@ -338,7 +338,7 @@ export default function Signup() {
                 value={token}
                 onChange={(e) => setToken(e.target.value)}
                 required
-                className="mt-1 block w-full p-2 border border-gray-300 rounded"
+                className="mt-1 block w-full p-2 border border-gray-300 dark:bg-gray-900 dark:text-white rounded"
                 placeholder="Enter the token sent to your email"
               />
             </div>
@@ -375,12 +375,12 @@ export default function Signup() {
               value={formData.name}
               onChange={handleInputChange}
               required
-              className="mt-1 block w-full p-2 border border-gray-300 rounded"
+              className="mt-1 block w-full p-2 border border-gray-300 dark:bg-gray-900 dark:text-white rounded"
             />
           </div>
 
           <div className="mb-4">
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-sm font-medium  text-gray-700 ">
               Email
             </label>
             <input
@@ -390,7 +390,7 @@ export default function Signup() {
               value={formData.email}
               onChange={handleInputChange}
               required
-              className="mt-1 block w-full p-2 border border-gray-300 rounded"
+              className="mt-1 block w-full p-2 border border-gray-300 dark:bg-gray-900 dark:text-white rounded"
             />
           </div>
 
@@ -405,7 +405,7 @@ export default function Signup() {
               value={formData.password}
               onChange={handleInputChange}
               required
-              className="mt-1 block w-full p-2 border border-gray-300 rounded"
+              className="mt-1 block w-full p-2 border border-gray-300 dark:bg-gray-900 dark:text-white rounded"
             />
           </div>
 
@@ -420,12 +420,12 @@ export default function Signup() {
               value={formData.dept}
               onChange={handleInputChange}
               required
-              className="mt-1 block w-full p-2 border border-gray-300 rounded"
+              className="mt-1 block w-full p-2 border border-gray-300 dark:bg-gray-900 dark:text-white rounded"
             />
           </div>
 
           <div className="mb-4">
-            <label htmlFor="image" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="image" className="block text-sm font-medium text-gray-900">
               Profile Image
             </label>
             <input
@@ -435,7 +435,7 @@ export default function Signup() {
               accept="image/*"
               onChange={handleFileChange}
               // required
-              className="mt-1 block w-full p-2 border border-gray-300 rounded"
+              className="mt-1 block w-full p-2 border border-gray-300 dark:bg-gray-900 dark:text-white rounded"
             />
           </div>
 

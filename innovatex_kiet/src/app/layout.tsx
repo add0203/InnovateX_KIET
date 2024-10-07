@@ -30,8 +30,8 @@ export default function RootLayout({
         <UserProvider>
         <Providers>
           <div className=''>
-            <SideNav />
-                <Header />
+            {/* <SideNav /> */}
+                {/* <Header /> */}
                 <HeaderMobile />
             <main>
               <MarginWidthWrapper>
@@ -40,7 +40,7 @@ export default function RootLayout({
               </MarginWidthWrapper>
             </main>
              <div className=" md:w-60 fixed right-0 top-0 h-full p-4 bg-gray-200 dark:bg-gray-800 -z-10">
-                  <Leaderboard  />
+                  {/* <Leaderboard  /> */}
               </div>
           </div>
         </Providers>

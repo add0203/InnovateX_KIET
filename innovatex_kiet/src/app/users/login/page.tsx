@@ -75,9 +75,9 @@ export default function login() {
 
   // Render the component
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900">
       {/* Container for the form */}
-      <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
+      <div className="bg-white p-8 rounded shadow-md w-full max-w-md ">
         <h1 className="text-2xl font-bold mb-6 text-center">Login</h1> {/* Form title */}
 
         {error && <p className="text-red-500 mb-4">{error}</p>} {/* Display error message if any */}
@@ -86,7 +86,7 @@ export default function login() {
         <form onSubmit={handleSubmit}>
           {/* Email input field */}
           <div className="mb-4">
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700 ">
               Email
             </label>
             <input
@@ -96,7 +96,7 @@ export default function login() {
               value={formData.email} // Bind input value to email state
               onChange={handleInputChange} // Call handleInputChange on input change
               required // Make this field mandatory
-              className="mt-1 block w-full p-2 border border-gray-300 rounded" // Tailwind CSS classes for styling
+              className="mt-1 block w-full p-2 border border-gray-300 dark:bg-gray-900 dark:text-white rounded" // Tailwind CSS classes for styling
             />
           </div>
 
@@ -112,7 +112,7 @@ export default function login() {
               value={formData.password} // Bind input value to password state
               onChange={handleInputChange} // Call handleInputChange on input change
               required // Make this field mandatory
-              className="mt-1 block w-full p-2 border border-gray-300 rounded" // Tailwind CSS classes for styling
+              className="mt-1 block w-full p-2 border border-gray-300 dark:bg-gray-900 dark:text-white rounded" // Tailwind CSS classes for styling
             />
           </div>
 
@@ -133,4 +133,124 @@ export default function login() {
       </div>
     </div>
   );
+
+  // return(
+  //   <div>
+  //   <div className="flex items-center justify-center min-h-screen bg-gray-100">
+  //     <div className="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
+  //       <h1 className="text-2xl font-bold text-center mb-6">Login</h1>
+  //       <form>
+  //         <div className="mb-4">
+  //           <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+  //             Email
+  //           </label>
+  //           <input
+  //             type="email"
+  //             id="email"
+  //             className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+  //             placeholder="you@example.com"
+  //             required
+  //           />
+  //         </div>
+  //         <div className="mb-4">
+  //           <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+  //             Password
+  //           </label>
+  //           <input
+  //             type="password"
+  //             id="password"
+  //             className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+  //             required
+  //           />
+  //         </div>
+  //         <button
+  //           type="submit"
+  //           className="w-full bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded transition duration-200"
+  //         >
+  //           Log In
+  //         </button>
+  //       </form>
+  //       <div className="mt-4 text-center">
+  //         <p className="text-sm text-gray-600">Or continue with</p>
+  //         <div className="flex justify-center space-x-4 mt-2">
+  //           <button className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-200">
+  //             <img src="/google-icon.svg" alt="Google" className="w-6 h-6" />
+  //           </button>
+  //           <button className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-200">
+  //             <img src="/facebook-icon.svg" alt="Facebook" className="w-6 h-6" />
+  //           </button>
+  //           <button className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-200">
+  //             <img src="/apple-icon.svg" alt="Apple" className="w-6 h-6" />
+  //           </button>
+  //         </div>
+  //       </div>
+  //       <p className="mt-4 text-sm text-center text-gray-600">
+  //         Don't have an account? <a href="#" className="text-pink-500">Sign Up here</a>
+  //       </p>
+  //     </div>
+  //   </div>
+  //   </div>
+  // )
+
+
+  // return(
+  // <div className="flex items-center justify-center min-h-screen bg-gray-100">
+  //     {/* Left Image Section */}
+  //     <div className="hidden md:block w-1/2 bg-cover bg-center" style={{ backgroundImage: "url('/path/to/your/image.png')" }}>
+  //       {/* You can replace '/path/to/your/image.png' with the actual path to your image */}
+  //     </div>
+  //     {/* Right Form Section */}
+  //     <div className="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
+  //       <h1 className="text-2xl font-bold text-center mb-6">Login</h1>
+  //       <form>
+  //         <div className="mb-4">
+  //           <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+  //             Email
+  //           </label>
+  //           <input
+  //             type="email"
+  //             id="email"
+  //             className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+  //             placeholder="you@example.com"
+  //             required
+  //           />
+  //         </div>
+  //         <div className="mb-4">
+  //           <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+  //             Password
+  //           </label>
+  //           <input
+  //             type="password"
+  //             id="password"
+  //             className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+  //             required
+  //           />
+  //         </div>
+  //         <button
+  //           type="submit"
+  //           className="w-full bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded transition duration-200"
+  //         >
+  //           Log In
+  //         </button>
+  //       </form>
+  //       <div className="mt-4 text-center">
+  //         <p className="text-sm text-gray-600">Or continue with</p>
+  //         <div className="flex justify-center space-x-4 mt-2">
+  //           <button className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-200">
+  //             <img src="/google-icon.svg" alt="Google" className="w-6 h-6" />
+  //           </button>
+  //           <button className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-200">
+  //             <img src="/facebook-icon.svg" alt="Facebook" className="w-6 h-6" />
+  //           </button>
+  //           <button className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition duration-200">
+  //             <img src="/apple-icon.svg" alt="Apple" className="w-6 h-6" />
+  //           </button>
+  //         </div>
+  //       </div>
+  //       <p className="mt-4 text-sm text-center text-gray-600">
+  //         Don't have an account? <a href="#" className="text-pink-500">Sign Up here</a>
+  //       </p>
+  //     </div>
+  //   </div>
+  // );
 }
